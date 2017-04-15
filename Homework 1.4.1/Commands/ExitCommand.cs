@@ -2,26 +2,30 @@
 
 namespace Homework_1._4._1
 {
-    class ExitCommand : ICommand
+    class ExitCommand : Command
     {
-        public void Abort()
+        public ExitCommand(CommandController controller) : base(controller)
+        {
+        }
+
+        public override void Abort()
         {
             throw new NotImplementedException();
         }
 
-        public void Action()
+        public override void Action()
         {
             throw new NotImplementedException();
         }
 
-        public string GetName()
+        public override string GetName()
         {
-            throw new NotImplementedException();
+            return "ExitCommand";
         }
 
-        public bool IsAvailability()
+        public override bool IsAvailability()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public partial class SomeFileModule { }

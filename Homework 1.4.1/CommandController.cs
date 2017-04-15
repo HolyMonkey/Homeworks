@@ -5,20 +5,24 @@ namespace Homework_1._4._1
 {
     class CommandController
     {
-        private List<ICommand> commands;
+        protected List<Command> commands;
+        public Database db;
 
-        public CommandController()
+        public CommandController(Database db)
         {
-            commands = new List<ICommand>
+            this.db = db;
+
+            commands = new List<Command>
             {
-                new ExitCommand(),
-                new ShowAllUsersCommand()
+                new ExitCommand(this),
+                new ShowAllUsersCommand(this),
+                new AddUserCommand(this)
             };
         }
 
-        public ICommand ResolveCommand(string name)
+        public Command ResolveCommand(string name)
         {
-            throw new NotImplementedException();
+            return commands.Find((x) => x.GetName() == name);
         }
     }
 }

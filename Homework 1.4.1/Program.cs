@@ -10,11 +10,13 @@ namespace Homework_1._4._1
     {
         static void Main(string[] args)
         {
-            CommandController Controller = new CommandController();
+            Database mainDataBase = new Database();
+            CommandController Controller = new CommandController(mainDataBase);
+
             while (true)
             {
                 string commandName = Console.ReadLine();
-                ICommand command = Controller.ResolveCommand(commandName);
+                Command command = Controller.ResolveCommand(commandName);
                 if(command != null && command.IsAvailability())
                 {
                     command.Action();

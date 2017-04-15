@@ -2,26 +2,30 @@
 
 namespace Homework_1._4._1
 {
-    class ShowAllUsersCommand : ICommand
+    class ShowAllUsersCommand : Command
     {
-        void ICommand.Abort()
+        public ShowAllUsersCommand(CommandController controller) : base(controller)
         {
-            throw new NotImplementedException();
         }
 
-        void ICommand.Action()
+        public override void Abort()
         {
-            throw new NotImplementedException();
+            return;
         }
 
-        string ICommand.GetName()
+        public override void Action()
         {
-            throw new NotImplementedException();
+            controller.db.Users.ForEach((x) => Console.WriteLine(x.Name));
         }
 
-        bool ICommand.IsAvailability()
+        public override string GetName()
         {
-            throw new NotImplementedException();
+            return "ShowAllUsers";
+        }
+
+        public override bool IsAvailability()
+        {
+            return true;
         }
     }
 }

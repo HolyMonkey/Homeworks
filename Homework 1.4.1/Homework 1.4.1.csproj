@@ -48,8 +48,10 @@
     <Compile Include="Book.cs" />
     <Compile Include="CommandController.cs" />
     <Compile Include="Commands\ExitCommand.cs" />
-    <Compile Include="Commands\SomeFileModule.cs" />
-    <Compile Include="ICommand.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Commands\AddUserCommand.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DataStorage.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
