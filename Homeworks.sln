@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework 1.4.1", "Homework 1.4.1\Homework 1.4.1.csproj", "{0802B3BD-28BE-40B6-8888-56693C2A915F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miscellaneous", "Miscellaneous\Miscellaneous.csproj", "{1F6E377E-F741-4C75-96D2-64107EB15AC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0802B3BD-28BE-40B6-8888-56693C2A915F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0802B3BD-28BE-40B6-8888-56693C2A915F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0802B3BD-28BE-40B6-8888-56693C2A915F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6E377E-F741-4C75-96D2-64107EB15AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6E377E-F741-4C75-96D2-64107EB15AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6E377E-F741-4C75-96D2-64107EB15AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6E377E-F741-4C75-96D2-64107EB15AC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
