@@ -12,6 +12,7 @@ namespace Miscellaneous
         {
             Console.WriteLine("Что вы хотите запустить?");
             string program = Console.ReadLine();
+            Console.Clear();
             if(program == "RPGv1")
             {
                 RPGv1.FakeMain();

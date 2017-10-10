@@ -1,0 +1,30 @@
+﻿[
+	x = 10
+	y = 10
+	symbol = #
+]
+[
+	x = 4
+	y = 7
+	symbol = #
+]
+[
+	x = 8
+	y = 5
+	symbol = @
+]
+[
+	x = 2
+	y = 15
+	symbol = #
+]
+[
+	x = 1
+	y = 3
+	symbol = #
+]
+[
+	x = 12
+	y = 11
+	symbol = @
+]
